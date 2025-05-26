@@ -1,0 +1,632 @@
+[gd_scene load_steps=11 format=3 uid="uid://c5y4crmq25g6p"]
+
+[ext_resource type="Theme" uid="uid://b3psdkeanq4y5" path="res://UI/B&C_Theme.tres" id="1_3fx7e"]
+[ext_resource type="Script" path="res://main.gd" id="1_iimwh"]
+[ext_resource type="Script" path="res://ScratchpadLineEdit.gd" id="3_y2pvc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y10xi"]
+font_size = 47
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pewwh"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+bg_color = Color(0.458824, 0.458824, 0.458824, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.270222, 0.270222, 0.270222, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="FontFile" id="FontFile_3j1id"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/23/0/ascent = 0.0
+cache/0/23/0/descent = 0.0
+cache/0/23/0/underline_position = 0.0
+cache/0/23/0/underline_thickness = 0.0
+cache/0/23/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/27/0/ascent = 0.0
+cache/0/27/0/descent = 0.0
+cache/0/27/0/underline_position = 0.0
+cache/0/27/0/underline_thickness = 0.0
+cache/0/27/0/scale = 1.0
+cache/0/28/0/ascent = 0.0
+cache/0/28/0/descent = 0.0
+cache/0/28/0/underline_position = 0.0
+cache/0/28/0/underline_thickness = 0.0
+cache/0/28/0/scale = 1.0
+cache/0/29/0/ascent = 0.0
+cache/0/29/0/descent = 0.0
+cache/0/29/0/underline_position = 0.0
+cache/0/29/0/underline_thickness = 0.0
+cache/0/29/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+cache/0/31/0/ascent = 0.0
+cache/0/31/0/descent = 0.0
+cache/0/31/0/underline_position = 0.0
+cache/0/31/0/underline_thickness = 0.0
+cache/0/31/0/scale = 1.0
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/33/0/ascent = 0.0
+cache/0/33/0/descent = 0.0
+cache/0/33/0/underline_position = 0.0
+cache/0/33/0/underline_thickness = 0.0
+cache/0/33/0/scale = 1.0
+cache/0/34/0/ascent = 0.0
+cache/0/34/0/descent = 0.0
+cache/0/34/0/underline_position = 0.0
+cache/0/34/0/underline_thickness = 0.0
+cache/0/34/0/scale = 1.0
+cache/0/35/0/ascent = 0.0
+cache/0/35/0/descent = 0.0
+cache/0/35/0/underline_position = 0.0
+cache/0/35/0/underline_thickness = 0.0
+cache/0/35/0/scale = 1.0
+cache/0/36/0/ascent = 0.0
+cache/0/36/0/descent = 0.0
+cache/0/36/0/underline_position = 0.0
+cache/0/36/0/underline_thickness = 0.0
+cache/0/36/0/scale = 1.0
+cache/0/37/0/ascent = 0.0
+cache/0/37/0/descent = 0.0
+cache/0/37/0/underline_position = 0.0
+cache/0/37/0/underline_thickness = 0.0
+cache/0/37/0/scale = 1.0
+cache/0/38/0/ascent = 0.0
+cache/0/38/0/descent = 0.0
+cache/0/38/0/underline_position = 0.0
+cache/0/38/0/underline_thickness = 0.0
+cache/0/38/0/scale = 1.0
+cache/0/39/0/ascent = 0.0
+cache/0/39/0/descent = 0.0
+cache/0/39/0/underline_position = 0.0
+cache/0/39/0/underline_thickness = 0.0
+cache/0/39/0/scale = 1.0
+cache/0/40/0/ascent = 0.0
+cache/0/40/0/descent = 0.0
+cache/0/40/0/underline_position = 0.0
+cache/0/40/0/underline_thickness = 0.0
+cache/0/40/0/scale = 1.0
+
+[sub_resource type="Theme" id="Theme_8c8je"]
+default_font = SubResource("FontFile_3j1id")
+Panel/styles/panel = SubResource("StyleBoxFlat_pewwh")
+
+[sub_resource type="InputEventKey" id="InputEventKey_ki8ki"]
+keycode = 4194310
+
+[sub_resource type="InputEventKey" id="InputEventKey_a84r2"]
+keycode = 4194309
+
+[sub_resource type="Shortcut" id="Shortcut_b47q1"]
+events = [SubResource("InputEventKey_ki8ki"), SubResource("InputEventKey_a84r2")]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+script = ExtResource("1_iimwh")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -0.380005
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.458824, 0.458824, 0.458824, 1)
+
+[node name="Header" type="HBoxContainer" parent="ColorRect"]
+visible = false
+layout_mode = 2
+offset_left = 590.0
+offset_right = 930.0
+offset_bottom = 65.0
+
+[node name="Title" type="Label" parent="ColorRect/Header"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+text = "Bulls and Cows"
+label_settings = SubResource("LabelSettings_y10xi")
+
+[node name="Columns" type="HBoxContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 0.380005
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GuessPanel" type="Panel" parent="ColorRect/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_8c8je")
+
+[node name="History Group" type="VBoxContainer" parent="ColorRect/Columns/GuessPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0196721
+anchor_top = 0.0204604
+anchor_right = 0.990164
+anchor_bottom = 0.97954
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_3fx7e")
+metadata/_edit_use_anchors_ = true
+
+[node name="Guesses" type="RichTextLabel" parent="ColorRect/Columns/GuessPanel/History Group"]
+custom_minimum_size = Vector2(70, 0)
+layout_direction = 1
+layout_mode = 2
+theme = ExtResource("1_3fx7e")
+bbcode_enabled = true
+text = "[center]Guesses[/center]
+"
+fit_content = true
+
+[node name="Top Row" type="HBoxContainer" parent="ColorRect/Columns/GuessPanel/History Group"]
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="GuessInput" type="LineEdit" parent="ColorRect/Columns/GuessPanel/History Group/Top Row"]
+custom_minimum_size = Vector2(75, 36)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Input"
+alignment = 1
+max_length = 5
+expand_to_text_length = true
+
+[node name="SubmitButton" type="Button" parent="ColorRect/Columns/GuessPanel/History Group/Top Row"]
+layout_mode = 2
+shortcut = SubResource("Shortcut_b47q1")
+text = "Submit Guess"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ColorRect/Columns/GuessPanel/History Group"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="GuessList" type="VBoxContainer" parent="ColorRect/Columns/GuessPanel/History Group/ScrollContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="WorkingTheoryPanel" type="Panel" parent="ColorRect/Columns"]
+custom_minimum_size = Vector2(200, 300)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.5
+theme = ExtResource("1_3fx7e")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/Columns/WorkingTheoryPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+
+[node name="Working Theory" type="RichTextLabel" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer"]
+clip_contents = false
+layout_mode = 2
+size_flags_vertical = 4
+theme = ExtResource("1_3fx7e")
+bbcode_enabled = true
+text = "[center]Working Theory[/center]"
+fit_content = true
+scroll_active = false
+
+[node name="GridContainer" type="GridContainer" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+columns = 5
+
+[node name="LineEdit" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit2" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit3" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit4" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit5" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit6" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit7" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit8" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit9" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit10" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit11" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit12" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit13" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit14" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit15" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit16" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit17" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit18" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit19" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit20" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit21" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit22" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit23" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit24" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit25" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="LineEdit" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+placeholder_text = "_"
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit2" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+placeholder_text = "_"
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit3" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+placeholder_text = "_"
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit4" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+placeholder_text = "_"
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="LineEdit5" type="LineEdit" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+placeholder_text = "_"
+alignment = 1
+max_length = 1
+select_all_on_focus = true
+script = ExtResource("3_y2pvc")
+
+[node name="AlphabetPanel" type="Panel" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="GridContainer" type="GridContainer" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -154.5
+offset_right = 154.5
+offset_bottom = 66.0
+grow_horizontal = 2
+columns = 13
+
+[node name="Button" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "A"
+
+[node name="Button2" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "B"
+
+[node name="Button3" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "C"
+
+[node name="Button4" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "D"
+
+[node name="Button5" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "E"
+
+[node name="Button6" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "F"
+
+[node name="Button7" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "G"
+
+[node name="Button8" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "H"
+
+[node name="Button9" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "I"
+
+[node name="Button10" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "J"
+
+[node name="Button11" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "K"
+
+[node name="Button12" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "L"
+
+[node name="Button13" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "M"
+
+[node name="Button14" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "N"
+
+[node name="Button15" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "O"
+
+[node name="Button16" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "P"
+
+[node name="Button17" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "Q"
+
+[node name="Button18" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "R"
+
+[node name="Button19" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "S"
+
+[node name="Button20" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "T"
+
+[node name="Button21" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "U"
+
+[node name="Button22" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "V"
+
+[node name="Button23" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "W"
+
+[node name="Button24" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "X"
+
+[node name="Button25" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "Y"
+
+[node name="Button26" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer/AlphabetPanel/GridContainer"]
+layout_mode = 2
+text = "Z"
+
+[node name="New Game" type="Button" parent="ColorRect/Columns/WorkingTheoryPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+text = "New Game"
